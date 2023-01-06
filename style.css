@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    background-color: lightcyan;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100px 100px 400px 100px;
+    grid-template-areas:
+        "header header"
+        "sidebar nav"
+        "sidebar article"
+        "footer footer"
+
+    ;
+}
+
+
+
+.header {
+    grid-area: header;
+    background-color: bisque;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: brown;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: red;
+}
+
+.article {
+    grid-area: article;
+    background-color: rgb(141, 178, 239);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(221, 181, 128);
+}
