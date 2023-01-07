@@ -1,40 +1,83 @@
 .container {
     display: grid;
     background-color: lightcyan;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 100px 100px 400px 100px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 50px 4fr 50px;
     grid-template-areas:
         "header header"
         "sidebar nav"
         "sidebar article"
-        "footer footer"
-
-    ;
+        "footer footer";
+    gap: 4px;
+    height: 1200px;
 }
+
+
 
 
 
 .header {
     grid-area: header;
     background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: brown;
+    background-color: rgb(255, 153, 109);
+    display: grid;
+    padding: 15px;
+    gap: 15px;
+
 }
 
 .nav {
     grid-area: nav;
     background-color: red;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px
 }
 
 .article {
+    display: grid;
     grid-area: article;
     background-color: rgb(141, 178, 239);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
 }
 
 .footer {
     grid-area: footer;
     background-color: rgb(221, 181, 128);
+}
+
+.menu {
+    background-color: bisque;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+
+.box {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+.articletitle {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.boxzero {
+    border-radius: 15px;
 }
